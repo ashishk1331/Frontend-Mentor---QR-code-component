@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700;900&display=swap" rel="stylesheet">
+  <style type="text/css">
+    :root{
+      --white: hsl(0, 0%, 100%);
+      --light-gray: hsl(212, 45%, 89%);
+      --grayish-blue: hsl(220, 15%, 55%);
+      --dark-blue: hsl(218, 44%, 22%);
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: 15px;
+      font-family: 'Poppins', sans-serif;
+    }
+    html,body,.root{
+      width: 100%;
+      height: 100%;
+      background-color: var(--light-gray);
+    }
+    .root{
+      position: relative;
+      display: flex;
+      text-align: center;
+    }
+    .card{
+      margin: auto;
+      width: 90%;
+      max-width: 300px;
+      background-color: var(--white);
+      border-radius: 1em;
+      overflow: hidden;
+      padding: 1.4em;
+    }
+    .card__image{
+      width: 100%;
+      border-radius: 10px;
+    }
+    .card__title{
+      font-size: 1.3em;
+      font-weight: 700;
+      margin: 1em 0;
+      color: var(--dark-blue);
+    }
+    .card__description{
+      margin-bottom: 1em;
+      color: var(--grayish-blue);
+    }
+    .attribution{
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%,-100%);
+      width: 100%;
+      text-align: center;
+      padding-bottom: 0.8em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="root">
+    <div class="card">
+      <img class="card__image" src="./images/image-qr-code.png" alt="QR code">
+      <h2 class="card__title">Improve your front-end skills by building projects</h2>
+
+      <p class="card__description">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/hugekontrast">Ashish Khare</a>.
+  </div>
+</body>
+</html>
